@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-05 16:34:00.638573",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "github_repo_link",
+  "github_user_name",
+  "github_repo_name",
+  "github_access_token",
+  "path"
+ ],
+ "fields": [
+  {
+   "fieldname": "github_access_token",
+   "fieldtype": "Password",
+   "label": "Github Access Token"
+  },
+  {
+   "fieldname": "github_repo_link",
+   "fieldtype": "Data",
+   "label": "Github Repo Link"
+  },
+  {
+   "fieldname": "github_user_name",
+   "fieldtype": "Data",
+   "label": "Github User Name"
+  },
+  {
+   "fieldname": "github_repo_name",
+   "fieldtype": "Data",
+   "label": "Github Repo Name"
+  },
+  {
+   "fieldname": "path",
+   "fieldtype": "Data",
+   "label": "Path"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-05 18:33:28.458051",
+ "modified_by": "Administrator",
+ "module": "Frappe Code Reviewer",
+ "name": "GitHub Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
