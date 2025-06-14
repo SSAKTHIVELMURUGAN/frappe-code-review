@@ -1,73 +1,89 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "RT-.#####",
- "creation": "2025-05-05 17:03:10.391698",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "section_break_fgtw",
-  "amended_from",
-  "code_response",
-  "file_path",
-  "github_repo_response"
- ],
- "fields": [
-  {
-   "fieldname": "section_break_fgtw",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Code Review",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
-   "fieldname": "code_response",
-   "fieldtype": "Text",
-   "label": "Code Response"
-  },
-  {
-   "fieldname": "file_path",
-   "fieldtype": "Data",
-   "label": "File Path"
-  },
-  {
-   "fieldname": "github_repo_response",
-   "fieldtype": "JSON",
-   "label": "Github Repo Response"
-  }
- ],
- "index_web_pages_for_search": 1,
- "is_submittable": 1,
- "links": [],
- "modified": "2025-05-05 19:15:37.454044",
- "modified_by": "Administrator",
- "module": "Frappe Code Reviewer",
- "name": "Code Review",
- "naming_rule": "Expression (old style)",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "RT-.#####",
+    "creation": "2025-05-05 17:03:10.391698",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "api_method",
+        "url",
+        "column_break_iagg",
+        "header",
+        "payload",
+        "section_break_igin",
+        "status_code",
+        "response"
+    ],
+    "fields": [
+        {
+            "fieldname": "api_method",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "API Method"
+        },
+        {
+            "fieldname": "url",
+            "fieldtype": "Small Text",
+            "label": "URL"
+        },
+        {
+            "fieldname": "column_break_iagg",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "header",
+            "fieldtype": "Code",
+            "label": "Header"
+        },
+        {
+            "fieldname": "payload",
+            "fieldtype": "Code",
+            "label": "Payload"
+        },
+        {
+            "fieldname": "section_break_igin",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "status_code",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Status Code"
+        },
+        {
+            "fieldname": "response",
+            "fieldtype": "Code",
+            "label": "Response"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2025-05-05 19:15:37.454044",
+    "modified_by": "Administrator",
+    "module": "Frappe Code Reviewer",
+    "name": "Code Review",
+    "naming_rule": "Expression (old style)",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "submit": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
 }

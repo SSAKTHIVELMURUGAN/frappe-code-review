@@ -25,5 +25,3 @@ class CodeReview(Document):
 		doc.response = json.dumps(results, indent=2)
 		doc.save()
 
-
-
