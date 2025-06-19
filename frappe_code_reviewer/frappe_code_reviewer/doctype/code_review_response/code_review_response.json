@@ -1,25 +1,45 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-05-05 19:41:13.679337",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "response"
+  "code_review",
+  "code_review_file_list",
+  "response",
+  "review_response"
  ],
  "fields": [
   {
    "fieldname": "response",
-   "fieldtype": "Text Editor",
+   "fieldtype": "HTML Editor",
    "label": "Response"
+  },
+  {
+   "fieldname": "code_review",
+   "fieldtype": "Small Text",
+   "label": "Code Review"
+  },
+  {
+   "fieldname": "review_response",
+   "fieldtype": "Text Editor",
+   "label": "Review Response"
+  },
+  {
+   "fieldname": "code_review_file_list",
+   "fieldtype": "Table",
+   "label": "Code Review File List",
+   "options": "Code Review File List"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-05 19:41:29.714104",
+ "modified": "2025-06-18 16:25:28.912318",
  "modified_by": "Administrator",
  "module": "Frappe Code Reviewer",
  "name": "Code Review Response",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -35,6 +55,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

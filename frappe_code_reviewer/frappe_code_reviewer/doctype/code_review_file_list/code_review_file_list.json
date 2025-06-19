@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-18 16:22:15.015472",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "file_name",
+  "doc_link",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "File Name"
+  },
+  {
+   "fieldname": "doc_link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doc Link",
+   "options": "Code Review Log"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-18 19:54:43.689045",
+ "modified_by": "Administrator",
+ "module": "Frappe Code Reviewer",
+ "name": "Code Review File List",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
